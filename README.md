@@ -1,1 +1,0 @@
-# Fathia-Sari-Rice-Bowl
