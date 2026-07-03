@@ -1,0 +1,198 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8f7f3;
+color:#333;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:white;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 30px;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+width:55px;
+height:55px;
+border-radius:50%;
+}
+
+.logo h2{
+font-size:22px;
+color:#2f6b2f;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+font-weight:600;
+color:#333;
+transition:.3s;
+}
+
+nav a:hover{
+color:#2f6b2f;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url(images/katsu.jpg);
+background-size:cover;
+background-position:center;
+}
+
+.hero-text{
+color:white;
+max-width:700px;
+}
+
+.hero-text h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 40px;
+background:#2f6b2f;
+color:white;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.btn:hover{
+background:#204d20;
+transform:translateY(-3px);
+}
+
+#menu{
+padding:90px 8%;
+}
+
+.judul{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#2f6b2f;
+}
+
+.menu-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:18px 20px 5px;
+font-size:23px;
+}
+
+.card p{
+padding:0 20px 20px;
+font-size:18px;
+color:#2f6b2f;
+font-weight:bold;
+}
+
+footer{
+background:#2f6b2f;
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+footer a{
+display:inline-block;
+margin-top:15px;
+color:white;
+font-size:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+gap:18px;
+}
+
+.hero-text h1{
+font-size:36px;
+}
+
+.hero-text p{
+font-size:16px;
+}
+
+.judul{
+font-size:30px;
+}
+
+}
